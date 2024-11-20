@@ -10,6 +10,7 @@
 \usepackage[english,serbian]{babel}
 %\usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
 
+\usepackage{float}
 \usepackage[unicode]{hyperref}
 \hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
 
@@ -55,7 +56,8 @@
 
 \title{Idealne studije\\ \small{Seminarski rad u okviru kursa\\Metodologija stručnog i naučnog rada\\ Matematički fakultet}}
 
-\author{Bojan Veličković, David Živković, Marko Radosavljević, Darko Mladenovski\\ dzivkovicd1@gmail.com, bojanvelickovic76@gmail.com, 01marko.radosavljevic@gmail.com, darkomladenovski0@gmail.com}
+\author{Bojan Veličković 1070/2024, David Živković 1027/2024\\ Darko Mladenovski 1067/2024, Marko Radosavljević 1010/2024\\bojanvelickovic76@gmail.com, dzivkovicd1@gmail.com,\\ darkomladenovski0@gmail.com, 01marko.radosavljevic@gmail.com}
+
 
 %\date{9.~april 2015.}
 
@@ -71,31 +73,14 @@ U ovom tekstu je ukratko prikazana osnovna forma seminarskog rada. Obratite paž
 \section{Uvod}
 \label{sec:uvod}
 
-Kada budete predavali seminarski rad, imenujete datoteke tako da sadrže redni broj teme, temu seminarskog rada, kao i prezimena članova grupe. Precizna uputstva na temu imenovnja će biti data na formi za predaju seminarskog rada. Predaja seminarskih radova biće isključivo preko veb forme, a NE slanjem mejla. Link na formu će biti dat u okviru obaveštenja na strani kursa. Vodite računa da prilikom predavanja seminarskog rada predate samo one fajlove koji su neophodni za ponovno generisanje pdf datoteke. To znači da pomoćne fajlove, kao što su .log, .out, .blg, .toc, .aux i slično, \textbf{ne treba predavati}.
+Biti idealan znači biti perfektan, savršen, najbolji (CITE). Da bi se to ostvarilo smatramo da treba da važe kriterijumi čije će ispunjenje garantovati da to toga i dođe. Obzirom da biti najbolji u bilo čemu nije nimalo lako, tako nije lako ni postaviti te kriterijume i jednoznačno ih odrediti, da jeste dosad bi verovatno sve studije bile idealne. Da bi kriterijumi opravdali svoju svrhu obezbeđivanja idealnih studija, smatramo bitnim da ti kriterijumi budu uvek ispunjeni.
 
-\section{Osnovna uputstva}
-Vaš seminarski rad mora da sadrži najmanje jednu \textbf{sliku}, najmanje jednu \textbf{tabelu} i najmanje \textbf{sedam referenci} u spisku literature. Najmanje jedna slika treba da bude originalna i da predstavlja neke podatke koje ste Vi osmislili da treba da prezentujete u svom radu. Isto važi i za najmanje jednu tabelu. 	Od referenci, neophodno je imati bar jednu \textbf{knjigu}, bar jedan \textbf{naučni članak} iz odgovarajućeg časopisa i bar jednu adekvatnu \textbf{veb adresu}. 
-
-\textbf{Dužina seminarskog rada treba da bude od 10 do 12 strana.} Svako prekoračenje ili potkoračenje biće kažnjeno sa odgovarajućim brojem poena. Eventualno, nakon strane 12, može se javiti samo tekst poglavlja \textbf{Dodatak} koji sadrži nekakav dodatni k\^{o}d, ali je svakako potrebno da rad može da se pročita i razume i bez čitanja tog dodatka. 
-
-Ко жели, може да пише рад ћирилицом. У том случају, неопходно је да су инсталирани одговарајући пакети: texlive-fonts-extra, texlive-latex-extra, texlive-lang-cyrillic, texlive-lang-other. 
-
-Nemojte koristiti stari način pisanja slova, tj ovo:
-\begin{verbatim}
-\v{s} i \v{c} i \'c ...
-\end{verbatim}
-Koristite direknto naša slova:	
-\begin{verbatim}
-š i č i ć ... 
-\end{verbatim}
+Najpre smo sproveli anketu koja ispituje studente kakvi su njihovi stavovi prema tim kriterijuma i koliko su, prema njihovom iskustvu, ti kriterijumi zastupljeni na Matematičkom fakultetu. Najpre ćemo se baviti stavovima svojih kolega u vezi sa tim kriterijuma, a potom i koliko su ti kriterijumi zastupljeni.
 
 
-\section{Engleski termini i citiranje}	
-\label{sec:termini_i_citiranje}
 
-Na svakom mestu u tekstu naglasiti odakle tačno potiču informacije. Uz sve novouvedene termine u zagradi naglasiti od koje engleske reči termin potiče. 
 
-Naredni primeri ilustruju način uvođenja enlegskih termina kao i citiranje.
+
 
 \begin{primer}
 Problem zaustavljanja (eng.~{\em halting problem}) je neodlučiv \cite{haltingproblem}.
@@ -110,15 +95,6 @@ Za prevođenje programa napisanih u programskom jeziku C može se koristiti GCC 
 \end{primer}
 
 Reference koje se koriste u ovom tekstu zadate su u datoteci {\em seminarski.bib}. Prevođenje u pdf format u Linux okruženju može se uraditi na sledeći način:
-\begin{verbatim}
-pdflatex TemaImePrezime.tex 
-bibtex TemaImePrezime.aux 
-pdflatex TemaImePrezime.tex 
-pdflatex TemaImePrezime.tex 
-\end{verbatim}
-Prvo latexovanje je neophodno da bi se generisao {\em .aux} fajl. {\em bibtex} proizvodi odgovarajući {\em .bbl} fajl koji se koristi za generisanje literature. 
-Potrebna su dva prolaza (dva puta pdflatex) da bi se reference ubacile u tekst (tj da ne bi ostali znakovi pitanja umesto referenci). Dodavanjem novih referenci potrebno je ponoviti ceo postupak.  
-
 
 
 
@@ -143,7 +119,35 @@ Možete koristiti srpska slova
 š i č i ć ... 
 \end{verbatim}
 
+section{Pregled osnovnih podataka o ispitanicima}
+Ispitanici koji su učestvovali u anketi dolaze sa različitih studijskih programa na Matematičkom fakultetu. Najveći broj ispitanika dolazi sa smera \textbf{Informatika (95.7\%)}, zatim slede smerovi \textbf{Računarstvo i Informatika (1.4)\%}, \textbf{Astroinformatika (1.4)\%}, dok studenti \textbf{matematičkih} smerova čine \textbf{1.4\%} ispitanika. Prikaz raspodele ispitanika po smerovima prikazan je na slici \ref{fig:raspodela_smerovi}. 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\linewidth]{raspodela_ispitanika.png}
+    \caption{Raspodela ispitanika po studijskim programima Matematičkog fakulteta}
+    \label{fig:raspodela_smerovi}
+\end{figure}
+
+
+Najveći procenat ispitanika \textbf{(31.9\%)} pohađa master studije, praćeno studentima treće \textbf{(19.4\%)}, druge \textbf{(13.9\%)} i četvrte \textbf{(11.1\%)} godine studija. Preostali ispitanici se deklarišu kao studenti prve godine \textbf{(8.3\%)}, studenti produženih osnovnih studija \textbf{(11.1\%)} i studenti koji su studije zavvršili \textbf{(4.2\%)}. Prikaz raspodele ispitanika po godinama prikazan je na slici \ref{fig:raspodela_godine}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{raspodela_godine.png}
+    \caption{Podela ispitanika po trenutnoj godini studija}
+    \label{fig:raspodela_godine}
+\end{figure}
+
+
+Na pitanje o proseku tokom studija, \textbf{50\%} ispitanika odgovorilo je da im prosek iznosi između 7 i 7.99, \textbf{22.1\%} ima prosek između 8 i 8.99, dok čak \textbf{16.2\%} ispitanika ima prosek u opsegu od 9 do 10. Samo \textbf{4.4\%} ispitanika ima prosek između 6 i 7, dok preostalih \textbf{7.4\%} nije želelo da se izjasni. Raspodela proseka može se videti na slici \ref{fig:raspodela_prosek}. Takođe, procenat ispitanika zenskog pola iznosi  \textbf{(41.7\%)} dok procenat ispitanika muškog pola iznosi \textbf{(56.9\%)}. Ostalih \textbf{1.4\%)} ispitanika nije se izjašnjavalo o polu.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{prosek.png}
+    \caption{Podela ispitanika po proseku}
+    \label{fig:raspodela_prosek}
+\end{figure}
 
 \section{Slike i tabele}
 \label{slike_i_tabele}
@@ -155,13 +159,6 @@ Slike i tabele treba da budu u svom okruženju, sa odgovarajućim naslovima, obe
 \usepackage{graphicx}
 \end{verbatim}
 
-\begin{figure}[h!]
-\begin{center}
-\includegraphics[scale=0.75]{panda.jpg}
-\end{center}
-\caption{Pande}
-\label{fig:pande}
-\end{figure}
 
 Na svaku sliku neophodno je referisati se negde u tekstu. Na primer, na slici \ref{fig:pande} prikazane su pande. 
 \end{primer}
@@ -182,26 +179,11 @@ d &e&f\\ \hline
 
 \end{primer}
 
-\section{K\^{o}d i paket listings}
-Za ubacivanje koda koristite paket \textbf{listings}:
-\url{https://en.wikibooks.org/wiki/LaTeX/Source_Code_Listings}
-
-\begin{primer}
-Primer ubacivanja koda za programski jezik Python dat je kroz listing \ref{simple}. Za neki drugi programski jezik, treba podesiti odgvarajući programski jezik u okviru defnisanja stila.
-\end{primer}
-\begin{lstlisting}[caption={Primer ubacivanja koda u tekst},frame=single, label=simple]
-# This program adds up integers in the command line
-import sys
-try:
-    total = sum(int(arg) for arg in sys.argv[1:])
-    print 'sum =', total
-except ValueError:
-    print 'Please supply integer arguments'
-\end{lstlisting}
 
 
-\section{Prvi naslov}
-\label{sec:naslov1}
+
+\section{Stavovi studenata}
+\label{sec:stavovi_studenata}
 
 
 Ovde pišem tekst. 
@@ -214,19 +196,67 @@ Ovde pišem tekst.
 Ovde pišem tekst. 
 
 
-\subsection{Prvi podnaslov}
+\subsection{Zadovoljstvo kursevima}
+\label{subsec:zadovoljstvo_kursevima}
+
+Zadovoljstvo studenata kursevima koje pohadjaju je značajan činilac koji doprinosi poboljšanju kvaliteta tih kurseva, kao i celokupnom kvalitetu studija (CITE). Važno je baviti se opštim zadovljstvom studenata kako bi se proverilo da li studije ispunjavaju svoju namenu, a to je da pripreme studente za izazove koje im slede u daljim karijerama (CITE). Ovde se takođe nameću i kriterijumi pripreme studenata da mogu samostalo da se usavršavaju nakon završenih studija, kao i koliko predmeti prate potrebe tržišta, ali o tome kasnije.
+Kako bismo ispitali važnost svojih kriterijuma sproveli smo anketu medju studentima Matematičkog fakulteta da bismo videli koje kriterijume smatraju za bitnim, i (bar nama) još važnije, koliko tih kriterijuma je zastupljeno na Matematičkom fakultetu i u kojoj meri.
+
+Anketom smo proveravali zadovoljstvo studenata obaveznim i izbornim predmetima. Na pitanje koliko misle da je bitno da student bude zadovoljan obaveznim kursevima, 54.3\% je dalo najvisu ocenu, malo manju ocenu (ocenu 4) je dalo 28.6\% ispitanih studenata. Samo  14.3\% je dalo srednju ocenu. Znači da je čak 83\% ispitanika reklo da se slaže sa tvrdjom da je zadovoljstva studenanata važno. Prosečna ocena je 4.32, medijana je 5, dok je varijansa 0.76.
+
+Za izborne predmete je situacija slična, stim sto je značajno veći broj studenata najviše ocenio važnost zadovoljstva izbornim predmetima, cak 70\%, dok je malo niže ocenilo (ocenom 4) 21.4\% ispitanika. Što znači da je čak 91.4\% ispitanih studenata reklo da je njihovo zadovoljstvo izbornim predmetima važno kako bi se studije smatrale idealnim. Prosečna ocena je 4.58, medijana je 5, dok je varijansa 0.55. Iz prethodnih rezultat se može zaključiti da je studentima vrlo važno da budu zadovoljni kursevima koje pohađaju kako bi studije bile idealne.
+
+
+\subsection{Osnova za samostalno usavršavanje}
+\label{subsec:samostalno_usavršavanje}
+Kao što je i malopre pomenuto, glavna stvar zbog koje se studije upisuju je da bi studenti postali dovoljno vešti da mogu savladati sve izazove na koje mogu naići u svojoj predstojećoj karijeri. Obzirom da je nemoguće predvideti kako će se potrebe znanja menjati i pošto nije izvodljivo da se student nauči svemu, neophodno je usredresditi se na najbitnija znanja koja pružaju dobru osnovu tako da student nakon završetka studija, shodno potrebama može nadalje sam usavršavati svoja znanja sa što manje poteškoća.
+
+Ovom logikom je u anketi ispitanim studentima postavljeno pitanje da li smatraju da je za idealne studije bitno da se stiče dobra osnova na osnovu koje se kasnije mogu samostalno usavršavati. Najčešći odgovor je bio da se u potpunosti slažu (ocena 5), čak 66.7\%, malo manju ocenu (ocenu 4) ja dalo 25\%, dok je srednju (ocenu 3) dalo samo 5.6\% i ostali, (3\%) je dalo nizu ocenu. Prosečna ocena iznosi 4.54, medijana je 5, dok je varijansa 0.61 Odgovori su skoro jednoglasni po stavu da je bitno da idealne studije treba da spreme studente za svoje dalje poduhvate. 
+
+\subsection{Kursevi koji prate tržište}
+\label{subsec:tržište}
+Obzirom da smo već pomenuli da je svrha studija da spreme studente za predstojeće izazove, smatramo da je bitno razmotriti da li su obrađivane teme na kursevima u skladu sa potrebama tržišta. Ukoliko nisu, mišljenja smo da bi to obesmislilo studije osim ako svrha nije baviti se naučnim radovima.
+
+Pitanje koje smo postavili anketi kako bismo uvideli značaj ovog uviđanja je: da li smatrate da je za idealne studije važno da su predmeti povezani sa potrebama tržišta? Najčešći ocena je bila 4, sa 43.7\%, najveća ocena 35.2\%, niske ocene (1 i 2) je dalo ukupno 10\% ispitanih studenata. Prosečna ocena je 4, medijana je 4, dok je varijansa 1.03. Odakle se može zaključiti da je ovaj kriterijum smatran za važnim među ispitanicima.
+
+
+\subsection{Organizacija fakulteta i kurseva}
 \label{subsec:podnaslov1}
 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
+U okviru ankete, koju su ispitanici bili zamoljeni da urade, postavljena su pitanja o tome da li oni smatraju da je organizacija fakulteta bitna za idealne studije i da ocene
+organizaciju na Matematičkom fakultetu. Preko 70\% ispitanika (njih 52) se izjasnilo da se u potpunosti slažu sa stavom da je organizacija bitna za idealne studije.\\
+\begin{figure}[h!]
+\begin{center}
+    \includegraphics[scale = 0.3]{PieChartOrganizacija.png}
+    \caption{Stavovi studenata o tome koliko je organizacija fakulteta bitna za kvalitet studija}
+    \label{fig:organizacija}
+\end{center}
+\end{figure}
 
-\subsection{Drugi podnaslov}
-\label{subsec:podnaslov2}
+Takođe, većina studenata smatra da je za kvalitet studija bitno da imaju uticaj na to kako se kursevi polažu. Opcija da studenti biraju da li će imati predispitne obaveze ili projekte im u velikoj meri utiče na odluku da li su studije dobre ili ne.\\
+\begin{figure}[h!]
+\begin{center}
+    \includegraphics[scale = 0.3]{PieChartUticajNaPolaganje.png}
+    \caption{Stavovi sudenata o tome koliko je bitno da imaju uticaj na to kako se ispiti polažu}
+    \label{fig:uticaj}
+\end{center}
+\end{figure}\\
+
+Kada smo tražili od ispitanika da ocene organizaciju na Matematičkom fakultetu, većina studenata nije bilo zadovoljno. 76\% ispitanika je dalo ocenu 1 ili ocenu 2, a 0 ispitanika je dalo ocenu 5. Glavni razlog za ovakve odgovore je bio manjak rokova za polaganje ispita, blisko praćen činjenicom da su teorija i praktični ispit najčešće u razdvojenim terminima, ali jako zavisni jedno od drugog.\\
+\begin{figure}[h!]
+\begin{center}
+    \includegraphics[scale = 0.3]{PieChartOrganizacijaMatf.png}
+    \caption{Ocene organizacije na Matematičkom fakultetu}
+    \label{fig:organizacija_matf}
+\end{center}
+\end{figure}
+
+
+
+
+
+
+\section{Iskustva studenata na Matematičkom fakultetu}
 
 Ovde pišem tekst. 
 Ovde pišem tekst. 
@@ -234,61 +264,68 @@ Ovde pišem tekst.
 Ovde pišem tekst. 
 Ovde pišem tekst. 
 Ovde pišem tekst. 
+Ovde pišem tekst. 
+Ovde pišem tekst.
+
+\subsection{Zadovoljstvo kursevima}
+Ispitani studenti su bili poprilično jasni kod svojih stavova po pitanju važnosti zadovoljstva obaveznih i izbornih kurseva da bi studije bile idealne. Valjalo bi sada, videti da li su ti isti ispitanici zadovoljni kursevima koje su pohadjali za vreme studiranja.
+
+Na pitanje koliko su zadovoljni obaveznim predmetima, najviše njih je dalo ocenu 4 (uglavnom zadovoljni) odnosno 40.3\%, dok je najvišu ocenu dalo samo 13.9\%, srednju ocenu je dalo 30.6\%, dok je nisku ocenu (ocenu 2) dalo 13.9\% ispitanika. Prosečna ocena iznosi 3.52, medijana je 4, dok je varijansa 0.89.
+
+Kod odgovora u vezi sa izbornim predmetima se javlja slična situacija, 36.1\% je dalo ocenu 4, samo 5,6\% je dalo ocenu 5, srednju ocenu (ocenu 3) je dalo 33,3\% , dok je 25\% dalo niske ocene, po 12,5\% ispitanih studenata ocenu 2, odnosno 1. Prosek ocena iznosi 3.09, medijana je 3, dok je varijansa 1,19. 
+
+Kod oba kriterijuma su studenti ocenili svoje zadovoljstvo kursevima malo iznad prosečnog. Naime, po mišljenjima autora, ocena je osetno niža nego što bi trebalo da bude ako je cilj ostvariti idealne studije.
+
+\subsection{Osnova za samostalno usavršavanje}
+Većina studeanata je već okarakterisalo kriterijum spremanja za dalje usavršavanje važnim da bi studije bile idealne. Sada treba videti koliko njih je zapravo reklo da je to trend i na Matematičkom fakultetu.
+Odgovori su sledeći: 55.7\%  se uglavnom slaže (ocena 4), 22.9\% slaže u potpunosti,  11.4\%  ispitanika je dalo srednju ocenu, dok ostali ispitani studenti su rekli da su još uvek na početku studija, te nisu dovoljno studirali kako bi dali precizan odgovor. Prosečna ocena ovih odgovora (računaju se samo brojčani) je  4.12, medijana je 4, dok je varijansa 0.6. Reklo bi se da je ocena poprilično visoka, stoga može se tvrditi da studenti uglavnom smatraju da će biti dobro pripremljeni da se nadalje samostalno usavršavaju shodno potrebama.
 
 
-\subsection{... podnaslov}
-\label{subsec:podnaslovN}
-
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-
-\section{n-ti naslov}
+\subsection{Kursevi koji prate tržište}
 \label{sec:naslovN}
 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
+Već je (anketom) ranije obrađeno da je ovaj kriterijum smatran za bitnim kad je reč o idealnom studiranju, stoga bi trebalo ispitati da li se po mišljenju ispitanika smatra da je on zastupljen. Najčešće je data srednja ocena 50\%, visoka ocena (ocena 4) 27.8\%, najviša ocena samo 4.2\%, dok je ostalo niska ocena. Prosečna ocena je 3.11, medijana 3, varijansa 0.82. Ako bismo uzeli date rezultate u obzir, reklo bi se da kursevi pomalo prate potrebe tržišta, ali da su još uvek poprilično nezavisni u odnosu na tržište.
 
-\subsection{... podnaslov}
-\label{subsec:podnaslovK}
 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
 
-\subsection{... podnaslov}
-\label{subsec:podnaslovM}
+\subsection{Uticaj povratnih informacija o napretku studenata na kvalitet studija}
+\label{subsec:podnaslov2}
 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
-Ovde pišem tekst. 
+Povratne informacije o napretku u velikoj meri utiču na samopouzdanje studenata, a studenti koji su sigurni u sebe i svoje znanje nakon studija će za uzvrat oceniti svoj fakultet bolje. Većina ispitanika smatra da je za idealne studije neophodno da u toku studija često dobijaju povratne informacije kako bi se osećali sigurnije. \\
+\begin{figure}[h!]
+\begin{center}
+    \includegraphics[scale = 0.3]{PieChartPovratneInformacije.png}
+    \caption{Stavovi o važnosti povratnih informacije u toku studija}
+    \label{fig:povratne_informacije}
+\end{center}
+\end{figure}
+\\Na Matematičkom fakultetu, studenti se većinski slažu da skoro nikada nisu dobijali povratne informacije o svom napretku tokom studija. 67.6\% (48) studenata su rekli da su jako retko ili da nikada nisu dobijali ovu vrstu potvrde napretka. Ova činjenica ima uticaj na samopouzdanje studenata, pa su iz tog razloga ove vrste potvrda neophodne za idealne studije. \\
+\begin{figure}[h!]
+\begin{center}
+    \includegraphics[scale = 0.3]{PovratneInformacijeMatf.png}
+    \caption{Učestalost povratnih informacija o napretku na Matematičkom fakultetu}
+    \label{fig:povratne_informacije_matf}
+\end{center}
+\end{figure}
+\\Većina studenata Matematičkog fakulteta (njih 32) je donekle siguran u svoje znanje. Potpuno sigurnih studenata (njih 9) ima isto koliko i onih koji nisu uopšte sigurni (njih 1) ili su većinski nesigurni (njih 8).\\
+\begin{figure}[h!]
+\begin{center}
+    \includegraphics[scale = 0.3]{SamouverenostStudenataMatf.png}
+    \caption{Koliko su studenti Matematičkog fakulteta samouvereni u svoje znanje}
+    \label{fig:samouverenost_matf}
+\end{center}
+\end{figure}
+\\
+Takođe, postoji velika količina literature na temu uticaja samouverenosti studenata u svoje znanje na njihov proces učenja. Profesori i mentori imaju veliki uticaj na samopouzdanje svojih ucenika, a to loše samopouzdanje često negativno utiče na napredak studenta \cite{G1}. 
+Samopouzdanje studenata je podatak na osnovu kog se može jako dobro predvideti njegov napredak.\cite{G2}
+
+
 
 
 \section{Zaključak}
 \label{sec:zakljucak}
 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
-Ovde pišem zaključak. 
+Na osnovu obrađenih rezultata mogli smo videti da su među bitnijim kriterijumima navedeni ..., i da njihovo ostvarivanje u praksi (bar na Matematičkom fakultetu) malo zaostaje od najvišeg standarda. Matematički fakultet kao visoko školska ustanova ima dosta potencijala, ali iz iskustva studenata deluje kao da se ne radi dovoljno na tome da se studije približi statusu idealnih. Iako možda još uvek nije idealan, daleko je od lošeg. Deluje kao da dosta stvari treba menjati, međutim trebalo si osvrnuti na stvari koje su zaista na zadovoljavajuće visokom nivou i treba podjednako raditi i na tome da se te osobine očuvaju.  
 
 
 \addcontentsline{toc}{section}{Literatura}
