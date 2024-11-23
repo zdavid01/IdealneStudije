@@ -6,6 +6,7 @@
 \usepackage[T2A]{fontenc} % enable Cyrillic fonts
 \usepackage[utf8]{inputenc} % make weird characters work
 \usepackage{graphicx}
+\usepackage{subcaption}
 
 \usepackage[english,serbian]{babel}
 %\usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
@@ -87,7 +88,7 @@ Ispitanici koji su učestvovali u anketi dolaze sa različitih studijskih progra
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\linewidth]{raspodela_ispitanika.png}
+    \includegraphics[width=0.7\linewidth]{Slike/PieChartSmerovi.png}
     \caption{Raspodela ispitanika po studijskim programima Matematičkog fakulteta}
     \label{fig:raspodela_smerovi}
 \end{figure}
@@ -97,7 +98,7 @@ Najveći procenat ispitanika \textbf{(31.9\%)} pohađa master studije, praćeno 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\linewidth]{raspodela_godine.png}
+    \includegraphics[width=0.7\linewidth]{Slike/PieChartGodinaStudiranja.png}
     \caption{Podela ispitanika po trenutnoj godini studija}
     \label{fig:raspodela_godine}
 \end{figure}
@@ -107,7 +108,7 @@ Na pitanje o proseku tokom studija, \textbf{50\%} ispitanika odgovorilo je da im
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\linewidth]{prosek.png}
+    \includegraphics[width=0.7\linewidth]{Slike/PieChartProsek.png}
     \caption{Podela ispitanika po proseku}
     \label{fig:raspodela_prosek}
 \end{figure}
@@ -150,7 +151,7 @@ S tim u vezi, smatramo da je bitno razmotriti da li su obrađivane teme na kurse
 U okviru već pomenute ankete, postavljena su pitanja o tome da li oni smatraju da je organizacija fakulteta bitna za idealne studije. Preko \textbf{70\%} ispitanika se izjasnilo da se u potpunosti slažu (ocena 5) sa stavom da je organizacija bitna za idealne studije.
 \begin{figure}[h!]
 \begin{center}
-    \includegraphics[scale = 0.3]{PieChartOrganizacija.png}
+    \includegraphics[width=0.7\linewidth]{Slike/PieChartOrganizacijaFakulteta.png}
     \caption{Stavovi studenata o tome koliko je organizacija fakulteta bitna za kvalitet studija}
     \label{fig:organizacija}
 \end{center}
@@ -159,8 +160,8 @@ U okviru već pomenute ankete, postavljena su pitanja o tome da li oni smatraju 
 Takođe, većina studenata smatra da je za kvalitet studija bitno da imaju uticaj na to kako se kursevi polažu. Opcija da studenti biraju između predispitnih obaveza ili projekata pomaže im da savladaju gradivo, što dalje utiče na njihovo poimanje da li su studije idealne.
 \begin{figure}[h!]
 \begin{center}
-    \includegraphics[scale = 0.3]{PieChartUticajNaPolaganje.png}
-    \caption{Stavovi sudenata o tome koliko je bitno da imaju uticaj na to kako se ispiti polažu}
+    \includegraphics[width=0.7\linewidth]{Slike/PieChartNacinPolaganja.png}
+    \caption{Stavovi studenata o tome koliko je bitno da imaju uticaj na to kako se ispiti polažu}
     \label{fig:uticaj}
 \end{center}
 \end{figure}
@@ -168,7 +169,7 @@ Takođe, većina studenata smatra da je za kvalitet studija bitno da imaju utica
 
 \begin{figure}[h!]
 \begin{center}
-    \includegraphics[scale = 0.3]{PieChartOrganizacijaMatf.png}
+    \includegraphics[width=0.7\linewidth]{Slike/PieChartOrganizacijaMatfa.png}
     \caption{Ocene organizacije na Matematičkom fakultetu}
     \label{fig:organizacija_matf}
 \end{center}
@@ -187,7 +188,7 @@ Ukoliko se desi da je samopouzdanje nisko onda će to negativno uticati na napre
 Većina ispitanika smatra da je za idealne studije neophodno da u toku studija često dobijaju povratne informacije kako bi se osećali sigurnije u svoje znanje. 
 \begin{figure}[h!]
 \begin{center}
-    \includegraphics[scale = 0.3]{PieChartPovratneInformacije.png}
+    \includegraphics[width=0.7\linewidth]{Slike/PieChartPovratneInformacije.png}
     \caption{Stavovi o važnosti povratnih informacije u toku studija}
     \label{fig:povratne_informacije}
 \end{center}
@@ -228,25 +229,33 @@ Ovde ćemo takođe napomenuti i studenstke prakse. Naime, samo \textbf{12.7\%} i
 
 \subsection{Povratne informacije o napretku studenata}
 \label{subsec:napredak_iskustva}
-Na Matematičkom fakultetu studenti se većinski slažu da skoro nikada nisu dobijali povratne informacije o svom napretku tokom studija. Čak \textbf{67.6\%} studenata je reklo da su jako retko ili da nikada nisu dobijali ovu vrstu povratne informacije, što je negativno uticalo na njihov napredak. Ova činjenica ima uticaj na samopouzdanje studenata, pa su iz tog razloga ove vrste potvrda neophodne kako bi studije bile idealne. 
+Na Matematičkom fakultetu studenti se većinski slažu da skoro nikada nisu dobijali povratne informacije o svom napretku tokom studija. Čak \textbf{67.6\%} studenata je reklo da su jako retko ili da nikada nisu dobijali ovu vrstu povratne informacije, što je negativno uticalo na njihov napredak. Ova činjenica ima uticaj na samopouzdanje studenata, pa su iz tog razloga ove vrste potvrda neophodne kako bi studije bile idealne.
+
 \begin{figure}[h!]
 \begin{center}
-    \includegraphics[scale = 0.3]{PovratneInformacijeMatf.png}
-    \caption{Učestalost povratnih informacija o napretku na Matematičkom fakultetu}
-    \label{fig:povratne_informacije_matf}
+    \raisebox{0mm}{ % Adjust vertical position of the left figure
+        \begin{subfigure}[b]{0.45\textwidth}
+            \includegraphics[width=\textwidth]{PovratneInformacijeMatf.png}
+            
+            \vspace{50pt}
+            \caption{Učestalost povratnih informacija o napretku na Matematičkom fakultetu}
+            \label{fig:povratne_informacije_matf}
+        \end{subfigure}
+    }
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{SamouverenostStudenataMatf.png}
+        \caption{Koliko su studenti Matematičkog fakulteta samouvereni u svoje znanje}
+        \label{fig:samouverenost_matf}
+    \end{subfigure}
+    \caption{Povratne informacije i samouverenost studenata Matematičkog fakulteta}
+    \label{fig:combined_matf}
 \end{center}
 \end{figure}
 
 Većina studenata Matematičkog fakulteta (njih 32) je donekle siguran u svoje znanje. Potpuno sigurnih studenata (njih 9) ima isto koliko i onih koji nisu uopšte sigurni (njih 1) ili su većinski nesigurni (njih 8).
-\begin{figure}[h!]
-\begin{center}
-    \includegraphics[scale = 0.3]{SamouverenostStudenataMatf.png}
-    \caption{Koliko su studenti Matematičkog fakulteta samouvereni u svoje znanje}
-    \label{fig:samouverenost_matf}
-\end{center}
-\end{figure}
 
-
+\newpage
 \section{Zaključak}
 \label{sec:zakljucak}
 
