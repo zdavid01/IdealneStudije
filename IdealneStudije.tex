@@ -6,6 +6,7 @@
 \usepackage[T2A]{fontenc} % enable Cyrillic fonts
 \usepackage[utf8]{inputenc} % make weird characters work
 \usepackage{graphicx}
+\usepackage{subcaption}
 
 \usepackage[english,serbian]{babel}
 %\usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
@@ -228,25 +229,33 @@ Ovde ćemo takođe napomenuti i studenstke prakse. Naime, samo \textbf{12.7\%} i
 
 \subsection{Povratne informacije o napretku studenata}
 \label{subsec:napredak_iskustva}
-Na Matematičkom fakultetu studenti se većinski slažu da skoro nikada nisu dobijali povratne informacije o svom napretku tokom studija. Čak \textbf{67.6\%} studenata je reklo da su jako retko ili da nikada nisu dobijali ovu vrstu povratne informacije, što je negativno uticalo na njihov napredak. Ova činjenica ima uticaj na samopouzdanje studenata, pa su iz tog razloga ove vrste potvrda neophodne kako bi studije bile idealne. 
+Na Matematičkom fakultetu studenti se većinski slažu da skoro nikada nisu dobijali povratne informacije o svom napretku tokom studija. Čak \textbf{67.6\%} studenata je reklo da su jako retko ili da nikada nisu dobijali ovu vrstu povratne informacije, što je negativno uticalo na njihov napredak. Ova činjenica ima uticaj na samopouzdanje studenata, pa su iz tog razloga ove vrste potvrda neophodne kako bi studije bile idealne.
+
 \begin{figure}[h!]
 \begin{center}
-    \includegraphics[scale = 0.3]{PovratneInformacijeMatf.png}
-    \caption{Učestalost povratnih informacija o napretku na Matematičkom fakultetu}
-    \label{fig:povratne_informacije_matf}
+    \raisebox{0mm}{ % Adjust vertical position of the left figure
+        \begin{subfigure}[b]{0.45\textwidth}
+            \includegraphics[width=\textwidth]{PovratneInformacijeMatf.png}
+            
+            \vspace{50pt}
+            \caption{Učestalost povratnih informacija o napretku na Matematičkom fakultetu}
+            \label{fig:povratne_informacije_matf}
+        \end{subfigure}
+    }
+    \hfill
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{SamouverenostStudenataMatf.png}
+        \caption{Koliko su studenti Matematičkog fakulteta samouvereni u svoje znanje}
+        \label{fig:samouverenost_matf}
+    \end{subfigure}
+    \caption{Povratne informacije i samouverenost studenata Matematičkog fakulteta}
+    \label{fig:combined_matf}
 \end{center}
 \end{figure}
 
 Većina studenata Matematičkog fakulteta (njih 32) je donekle siguran u svoje znanje. Potpuno sigurnih studenata (njih 9) ima isto koliko i onih koji nisu uopšte sigurni (njih 1) ili su većinski nesigurni (njih 8).
-\begin{figure}[h!]
-\begin{center}
-    \includegraphics[scale = 0.3]{SamouverenostStudenataMatf.png}
-    \caption{Koliko su studenti Matematičkog fakulteta samouvereni u svoje znanje}
-    \label{fig:samouverenost_matf}
-\end{center}
-\end{figure}
 
-
+\newpage
 \section{Zaključak}
 \label{sec:zakljucak}
 
